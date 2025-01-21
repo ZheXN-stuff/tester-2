@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Prayer Times Table Styling */
+.prayer-times-table {
+    width: 35%; /* Make the table responsive */
+    margin: 10px 0;
+    border-collapse: collapse;
+    font-size: 22px;
+    background-color: #3300ff;
+    box-sizing: border-box;
+}
+
+.prayer-times-table th, .prayer-times-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1c4bd7;
+}
+
+.prayer-times-table th {
+    background-color: #ff4949;
+    font-weight: bold;
+}
+
+.prayer-times-table td {
+    color: #FFFFFF;
+}
+
+/* Scrolling Text Styling */
+.scroll-container {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-text {
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: left;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(500%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Logo container to handle positioning */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+
+}
+
+.small-logo {
+    width: 200px;
+    height: auto;
+}
+
+/* GIF Styling */
+.right-gif {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 63%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Container to handle layout */
+.container {
+    position: relative;
+	top: 25px;
+    width: 100%;
+    height: auto;
+    padding: 100px 15px 15px 15px;
+    box-sizing: border-box;
+}
+
+/* Date Styling */
+.date {
+    font-size: 1.6em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Prayer Time Block Styling */
+.prayer {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
